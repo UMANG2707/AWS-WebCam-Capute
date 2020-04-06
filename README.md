@@ -50,5 +50,4 @@ Capture images using webcam and store it to Amazon S3 bucket.
 
 ***
 
-### Video Link : 
-    (https://www.youtube.com/watch?v=HCAcuj2-SZM&feature=youtu.be)
+### Video Link : (https://www.youtube.com/watch?v=HCAcuj2-SZM&feature=youtu.be)
