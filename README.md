@@ -10,7 +10,7 @@ Capture images using webcam and store it to Amazon S3 bucket.
 
 ### 1. Create S3 bucket and store captured images to the s3 bucket using "aws-sdk for PHP".
 
-    ![download](https://user-images.githubusercontent.com/48994342/78524306-351ae480-77f1-11ea-8689-fbd60018de87.png)
+![download](https://user-images.githubusercontent.com/48994342/78524306-351ae480-77f1-11ea-8689-fbd60018de87.png)
 
 - Create simple web application which capture images and store it into local machine.
 - Open AWS consol and create IAM and S3 bucket.
