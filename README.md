@@ -35,8 +35,8 @@ Capture images using webcam and store it to Amazon S3 bucket.
     - Download composer and intall it.
         (https://getcomposer.org/Composer-Setup.exe)
     - Open root folder of your project and start cmd from location of that folder.
-    - Run below command to download and instal `aws-sdk for PHP`.
-        `composer require aws/aws-sdk-php`
+    - Run below command to download and install aws-sdk for PHP.
+        - `composer require aws/aws-sdk-php`
     - 
 
 *** 
@@ -45,4 +45,4 @@ Capture images using webcam and store it to Amazon S3 bucket.
 
 - Create EC2 instance and access it using SSH (https://github.com/UMANG2707/AWS-EC2-ACCESS-WITH-PUTTY).
 - Download XAMPP server(https://dmsbilas.wordpress.com/2019/03/12/how-to-install-xampp-in-amazon-aws-ubuntu-linux/).
-- Put this web application project into this instance and also install `aws-sdk for PHP` in project's root folder.
+- Put this web application project into this instance and also install `aws-sdk for PHP` in root folder of project.
