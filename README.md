@@ -47,3 +47,8 @@ Capture images using webcam and store it to Amazon S3 bucket.
 - Create EC2 instance and access it using SSH (https://github.com/UMANG2707/AWS-EC2-ACCESS-WITH-PUTTY).
 - Download XAMPP server(https://dmsbilas.wordpress.com/2019/03/12/how-to-install-xampp-in-amazon-aws-ubuntu-linux/).
 - Put this web application project into this instance and also install `aws-sdk for PHP` in root folder of project.
+
+***
+
+### Video Link : 
+    (https://www.youtube.com/watch?v=HCAcuj2-SZM&feature=youtu.be)
