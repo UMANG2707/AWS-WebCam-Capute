@@ -25,10 +25,19 @@ Capture images using webcam and store it to Amazon S3 bucket.
 
 
 - Open AWS consol and create IAM and S3 bucket.
-    - Create IAM user with programmatic access and save `ACCESS KEY` and `SECRET ACCESS KEY`.
     - Create s3 bucket.
+    - Create IAM user with programmatic access and save `ACCESS KEY` and `SECRET ACCESS KEY`.
+    - open `storeimage.php`
+        - Replace bucket name, Access key and Secret access with yours.
+        
     
 - Download aws-sdk for PHP and connect S3 bucket with web application.
+    - Download composer and intall it.
+        (https://getcomposer.org/Composer-Setup.exe)
+    - Open root folder of your project and start cmd from location of that folder.
+    - Run below command to download and instal `aws-sdk for PHP`.
+        `composer require aws/aws-sdk-php`
+    - 
 
 *** 
 
