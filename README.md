@@ -39,7 +39,6 @@ Capture images using webcam and store it to Amazon S3 bucket.
     - Open root folder of your project and start cmd from location of that folder.
     - Run below command to download and install aws-sdk for PHP.
         - `composer require aws/aws-sdk-php`
-    - 
 
 *** 
 
