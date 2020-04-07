@@ -72,6 +72,27 @@ Capture images using webcam and store it to Amazon S3 bucket.
           </CORSRule>
         </CORSConfiguration>
         ```
+    - Click on the New inline policy
+
+    - Update the policy to be as follows:
+        ```
+        {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:ListAllMyBuckets",
+                        "s3:PutObject",
+                        "s3:GetObject"
+                    ],
+                    "Resource": [
+                        "arn:aws:s3:::*"
+                    ]
+                }
+            ]
+        }
+        ```
     - open `storeimage.php`
     
         - Replace bucket name, Access key and Secret access with yours also give region and version.
