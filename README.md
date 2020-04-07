@@ -26,6 +26,29 @@ Capture images using webcam and store it to Amazon S3 bucket.
 
 - Open AWS consol and create IAM and S3 bucket.
     - Create s3 bucket.
+    - Then click Bucket Policy.
+    - Set your Bucket Policy to be the same as below. Change arn:aws:iam::281979644754:user/sample-user to be your User ARN. Also change        arn:aws:s3:::img-bucket-00123 to your Bucket ARN. The bucket ARN is above the textarea.
+        `{
+            "Version": "2012-10-17",
+            "Id": "Policy1488494182833",
+            "Statement": [
+                    {
+                        "Sid": "Stmt1488493308547",
+                        "Effect": "Allow",
+                        "Principal": {
+                        "AWS": "arn:aws:iam::281979644754:user/sample-user"
+                    },
+                    "Action": [
+                        "s3:ListBucket",
+                        "s3:ListBucketVersions",
+                        "s3:GetBucketLocation",
+                        "s3:Get*",
+                        "s3:Put*"
+                    ],
+                    "Resource": "arn:aws:s3:::img-bucket-00123"
+                    }
+                ]
+            }`
     - Create IAM user with programmatic access and save `ACCESS KEY` and `SECRET ACCESS KEY`.
     - open `storeimage.php`
     
