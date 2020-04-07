@@ -24,7 +24,8 @@ Capture images using webcam and store it to Amazon S3 bucket.
       <img width="941" alt="b" src="https://user-images.githubusercontent.com/48994342/78525752-b4aab280-77f5-11ea-9252-212bcfcc818d.png">
 
 
-- Open AWS consol and create IAM and S3 bucket.
+- Open AWS consol and create IAM and S3 bucket
+    - Create IAM user with programmatic access and save `ACCESS KEY` and `SECRET ACCESS KEY`.
     - Create s3 bucket.
     - Then click Bucket Policy.
     
@@ -57,7 +58,20 @@ Capture images using webcam and store it to Amazon S3 bucket.
                 ]
             }
             ```
-    - Create IAM user with programmatic access and save `ACCESS KEY` and `SECRET ACCESS KEY`.
+    - Click CORS configuration and add the following policy:
+        ```
+        <?xml version="1.0" encoding="UTF-8"?>
+        <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+          <CORSRule>
+            <AllowedOrigin>*</AllowedOrigin>
+            <AllowedMethod>GET</AllowedMethod>
+            <AllowedMethod>POST</AllowedMethod>
+            <AllowedMethod>PUT</AllowedMethod>
+            <MaxAgeSeconds>3000</MaxAgeSeconds>
+            <AllowedHeader>Authorization</AllowedHeader>
+          </CORSRule>
+        </CORSConfiguration>
+        ```
     - open `storeimage.php`
     
         - Replace bucket name, Access key and Secret access with yours also give region and version.
