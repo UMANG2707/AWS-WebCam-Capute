@@ -73,8 +73,13 @@ Capture images using webcam and store it to Amazon S3 bucket.
         </CORSConfiguration>
         ```
     - Click on the New inline policy
+    
+        <img width="242" alt="4" src="https://user-images.githubusercontent.com/48994342/78636635-5ac5ed80-78c6-11ea-905b-ca13ea94803d.png">
 
     - Update the policy to be as follows:
+    
+        <img width="1279" alt="3" src="https://user-images.githubusercontent.com/48994342/78636644-5c8fb100-78c6-11ea-8138-0805a115cd2e.png">
+
         ```
         {
             "Version": "2012-10-17",
